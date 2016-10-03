@@ -4,13 +4,21 @@ import Chnl from 'webaudio-chnl';
 export default class AudioChnl extends Chnl {
 
   audioObj;
+  isReady = false;
 
-  constructor(audioCtx, audioObj) {
+  constructor(audioCtx, audioObj, loaded = () => {}) {
     super(audioCtx);
     this.audioObj = audioObj;
+
+    this.audioObj.addEventListener('loadedmetadata', e => {
+      this.isReady = true;
+      loaded();
+    });
+
   }
 
   start() {
+    this.stop();
     this.audioObj.play();
   }
 
