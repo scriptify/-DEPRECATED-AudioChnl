@@ -15,6 +15,9 @@ export default class AudioChnl extends Chnl {
       loaded();
     });
 
+    const mediaSource = audioCtx.createMediaElementSource(audioObj);
+    mediaSource.connect(this);
+
   }
 
   start() {
