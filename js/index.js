@@ -26,8 +26,8 @@ export default class AudioChnl extends Chnl {
   }
 
   stop() {
-    this.pause();
     this.audioObj.currentTime = 0;
+    this.pause();
   }
 
   pause() {
