@@ -21,7 +21,6 @@ export default class AudioChnl extends Chnl {
   }
 
   start() {
-    this.stop();
     this.audioObj.play();
   }
 
