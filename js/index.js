@@ -34,6 +34,11 @@ export default class AudioChnl extends Chnl {
     this.audioObj.pause();
   }
 
+  seek(time) {
+    // Time in seconds
+    this.audioObj.currentTime = time;
+  }
+
 }
 
 /*const audioCtx = new AudioContext();
