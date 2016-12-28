@@ -1,6 +1,6 @@
 {
   "name": "audiochnl",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "AudioChnl - One Audio object, multiple effects. Easy.",
   "main": "build/bundle.js",
   "scripts": {
@@ -33,6 +33,6 @@
     "url": "https://github.com/scriptify/AudioChnl.git"
   },
   "dependencies": {
-    "webaudio-chnl": "0.0.4"
+    "webaudio-chnl": "*"
   }
 }
