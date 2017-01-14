@@ -33,6 +33,6 @@
     "url": "https://github.com/scriptify/AudioChnl.git"
   },
   "dependencies": {
-    "webaudio-chnl": "*"
+    "webaudio-chnl": "0.0.6"
   }
 }
